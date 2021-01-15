@@ -1,0 +1,109 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/asix"
+            android:layout_marginTop="20dp"
+            />
+        <!--level display-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level: 1"
+            android:textSize="30sp"
+            android:id="@+id/levelnum"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uiflag"
+                android:id="@+id/flag"
+                android:onClick="toggleflag"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Flags"
+                android:id="@+id/flagnum"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"
+                android:layout_marginLeft="35dp"
+                />
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:id="@+id/grid"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:rowCount="6" >
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttonbg2"
+                android:onClick="back"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retry level"
+                android:onClick="reset"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttonbg"
+                />
+            <!--to next zone, invisible until you reach condition-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Zone"
+                android:visibility="invisible"
+                android:onClick="tomedium"
+                android:layout_margin="5dp"
+                android:id="@+id/zone"
+                android:background="@drawable/buttonbg3"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

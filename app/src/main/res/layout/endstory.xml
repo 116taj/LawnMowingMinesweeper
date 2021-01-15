@@ -1,0 +1,113 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aend"
+            android:layout_marginVertical="10dp"
+            />
+        <!--default name, updated in java-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Congratulations.... whoever you are!"
+            android:textSize="22dp"
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            />
+        <!--time of run and best time saved-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Your time: 000"
+                android:id="@+id/timer"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/goldclock"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Best time: 000"
+                android:id="@+id/besttimer"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+        <!--ending info-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:text="You cleared all the lawns, and release your robot! Unfortunately, you forgot that you learned how to use the robot's functionalities, not the robot. So you decided to continue using the robot and act like it's automatic. No one will ever know, until they realize when they buy one it won't work."
+            android:textColor="#BBBBBB"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:padding="5dp"
+            android:text="Thanks for playing!"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            />
+        <!--buttons-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:background="@drawable/buttonbg2"
+                android:fontFamily="monospace"
+                android:layout_marginRight="15dp"
+                android:onClick="back"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:text="Again?"
+                android:fontFamily="monospace"
+                android:onClick="play"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

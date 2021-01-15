@@ -1,0 +1,54 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:src="@drawable/title"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="50dp"
+           />
+        <!--buttons to select mode, if they look off it's because one mode was removed-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bigbuttonbg"
+            android:text="Adventure Mode"
+            android:textSize="25dp"
+            android:fontFamily="monospace"
+            android:layout_marginVertical="7.5dp"
+            android:onClick="story"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Freeplay Mode"
+            android:background="@drawable/bigbuttonbg2"
+            android:fontFamily="monospace"
+            android:textSize="25dp"
+            android:layout_marginVertical="7.5dp"
+            android:onClick="freeplay"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Instructions"
+            android:fontFamily="monospace"
+            android:textSize="25dp"
+            android:background="@drawable/bigbuttonbg4"
+            android:layout_marginVertical="7.5dp"
+            android:onClick="instruct"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

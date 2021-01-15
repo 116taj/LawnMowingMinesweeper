@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.randhawaminesweeper">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RandhawaMinesweeper - Mineflower"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".MainGame"/>
+        <activity android:name=".Instructions"/>
+        <activity android:name=".MainGameSmall"/>
+        <activity android:name=".MainGameLarge"/>
+        <activity android:name=".GameOptions"/>
+        <activity android:name=".StoryBegin"/>
+        <activity android:name=".StoryEasy"/>
+        <activity android:name=".StoryMed"/>
+        <activity android:name=".StoryHard"/>
+        <activity android:name=".StoryEnd"/>
+        <activity android:name=".Title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

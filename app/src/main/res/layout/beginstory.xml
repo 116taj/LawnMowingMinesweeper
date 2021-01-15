@@ -1,0 +1,112 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--Best time and title-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storytitle"
+            android:layout_marginVertical="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clock"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Best time: 000"
+            android:id="@+id/timer"
+            android:textColor="#FFFFFF"
+            />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Conquer the lawns with your new robot lawn mower!"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal" >
+        <!--Name display and edit-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your name:"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:id="@+id/name"
+            />
+    </LinearLayout>
+        <!--Story info-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:text="You have recently invented a robot lawn mower which mows lawns automatically! However, there is a problem: It runs over plants that happen to be in the way! Not wanting to let your hard work go to waste, you install a proximity detector for flowers so the robot will know when it's near them. Now, all you need to do is test it by controlling the bot manually! 10 lawns must be cleared."
+            android:textColor="#BBBBBB"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:text="Note: It is recommended to read the instructions on how to play basic minesweeper. While new objects are explained, the base game isn't."
+            android:textColor="#EEEEEE"
+            />
+        <!--Buttons to go back and continue-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="@drawable/buttonbg2"
+                android:fontFamily="monospace"
+                android:layout_marginRight="15dp"
+                android:onClick="back"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:text="Play!"
+                android:fontFamily="monospace"
+                android:onClick="play"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
